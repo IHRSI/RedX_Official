@@ -122,10 +122,10 @@ const Events = () => {
       icon: Mic,
       description: 'Online speaker series featuring inspiring alumni, successful creators, and thought leaders.',
       details: [
-        'Weekly online sessions with industry experts',
+        'Online sessions with industry experts',
         'Alumni success stories and career guidance',
         'Creative workshops and skill-building sessions',
-        'Interactive Q&A with speakers',
+        'Interactive Q&A with celebrities',
         'Exclusive access for Red-X members',
       ],
       images: [
