@@ -207,7 +207,7 @@ const Membership = () => {
               href="mailto:redxmanipal@gmail.com"
               className="inline-flex items-center text-red-400 hover:text-red-300 transition-colors font-semibold"
             >
-              Contact us at redxmanipal@gmail.com
+              Contact us at redx.mit@manipal.edu
             </a>
           </div>
         </div>
