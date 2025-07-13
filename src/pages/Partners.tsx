@@ -107,7 +107,7 @@ const Partners = () => {
           name: 'Glitch Games',
           description: '15% off on total bill',
           phone: '+91 98765 43223',
-          email: 'glitch@gameshub.com'',
+          email: 'glitch@gameshub.com',
           logo: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc696?w=100&h=100&fit=crop&crop=center',
         },
       ]
