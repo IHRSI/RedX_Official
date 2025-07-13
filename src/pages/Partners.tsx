@@ -2,190 +2,51 @@
 import React from 'react';
 import { ExternalLink, Mail, Phone } from 'lucide-react';
 
-const Partners = () => {
-  const partnerCategories = [
-    {
-      title: 'Food & Dining',
-      partners: [
-        {
-          name: 'Roys Cafe',
-          description: '15% off on all meals',
-          phone: '+91 98765 43210',
-          email: 'info@cafedelight.com',
-          logo: 'https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Hakuna Matata',
-          description: '20% off above 1000',
-          phone: '+91 98765 43211',
-          email: 'orders@pizzacorner.com',
-          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4jd7q3SQt45WviE-0V6-FiDUBFNblqddKZQTAf3JMmSX_Vq2sAKJn3oQud2F7CSwhVoA&usqp=CAU',
-        },
-        {
-          name: 'Burger Shack',
-          description: '15% off on combo meals',
-          phone: '+91 98765 43212',
-          email: 'hello@burgerjunction.com',
-          logo: 'https://images.unsplash.com/photo-1571091718767-18b5b1457add?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'The Tawa Punjab',
-          description: '10% off on Indian cuisines',
-          phone: '+91 98765 43213',
-          email: 'contact@spiceroute.com',
-          logo: 'https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Bowls and Beyond',
-          description: '10% off on all orders',
-          phone: '+91 98765 43214',
-          email: 'info@noodlehouse.com',
-          logo: 'https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Caloria',
-          description: '20% off above 400',
-          phone: '+91 98765 43215',
-          email: 'orders@southtiffin.com',
-          logo: 'https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Manna Rolls',
-          description: '10% off above 300',
-          phone: '+91 98765 43216',
-          email: 'hello@chaiandmore.com',
-          logo: 'https://menu.restaurantguru.com/m3/Manna-Rolls-Manipal-menu-1.jpg',
-        },
-        {
-          name: 'A Cafe Story',
-          description: '20% off on salads',
-          phone: '+91 98765 43217',
-          email: 'info@healthybites.com',
-          logo: 'https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'ZZA Bar',
-          description: '20% off above 799',
-          phone: '+91 98765 43218',
-          email: 'bookings@bbqnation.com',
-          logo: 'https://images.unsplash.com/photo-1544025162-d76694265947?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Cafe La Rochelle',
-          description: '10% on entire bill',
-          phone: '+91 98765 43219',
-          email: 'fresh@juicebar.com',
-          logo: 'https://images.unsplash.com/photo-1622597467836-f3285f2131b8?w=100&h=100&fit=crop&crop=center',
-        },
-      ]
-    },
-    {
-      title: 'Gaming / Gyms',
-      partners: [
-        {
-          name: 'Extreme Fitness',
-          description: '20% off on memberships',
-          phone: '+91 98765 43220',
-          email: 'join@powerfitgym.com',
-          logo: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Level Up',
-          description: '20% off on gaming sessions',
-          phone: '+91 98765 43221',
-          email: 'play@gamezonearena.com',
-          logo: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Trigger Gaming',
-          description: '15% off above 300',
-          phone: '+91 98765 43222',
-          email: 'train@flexfitness.com',
-          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYQX2uPc9iymOQoEnhoLM8-CTo-fWyQWNqgw&s',
-        },
-        {
-          name: 'Glitch Games',
-          description: '15% off on total bill',
-          phone: '+91 98765 43223',
-          email: 'experience@vrworld.com',
-          logo: 'https://images.unsplash.com/photo-1592478411213-6153e4ebc696?w=100&h=100&fit=crop&crop=center',
-        },
-      ]
-    },
-    {
-      title: 'Saloons',
-      partners: [
-        {
-          name: 'Scissor Sound',
-          description: '40% off on Womens Facials',
-          phone: '+91 98765 43224',
-          email: 'book@stylestudio.com',
-          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfCX3_3-w1vGUa8BbmjO3zRVF1QykhnwYNaA&s',
-        },
-        {
-          name: 'Naturals',
-          description: '25% off on grooming',
-          phone: '+91 98765 43225',
-          email: 'groom@gentsparlor.com',
-          logo: 'https://content.jdmagicbox.com/v2/comp/hyderabad/z7/040pxx40.xx40.130819144442.c4z7/catalogue/naturals-family-salon-and-spa-barkatpura-hyderabad-unisex-beauty-parlours-xetqyvggho.jpg',
-        },
-        {
-          name: 'Tony & Guy',
-          description: '10% off above 1000',
-          phone: '+91 98765 43226',
-          email: 'info@unisexsalon.com',
-          logo: 'https://images.unsplash.com/photo-1560066984-138dadb4c035?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Plants',
-          description: '20% off on all services',
-          phone: '+91 98765 43227',
-          email: 'quick@quickcuts.com',
-          logo: 'https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Habit',
-          description: '15% off on all services',
-          phone: '+91 98765 43228',
-          email: 'premium@grooming.com',
-          logo: 'https://images.unsplash.com/photo-1585747860715-2ba37e788b70?w=100&h=100&fit=crop&crop=center',
-        },
-      ]
-    },
-    {
-      title: 'Desserts',
-      partners: [
-        {
-          name: '7th Avenue Waffles',
-          description: '20% off above 900',
-          phone: '+91 98765 43229',
-          email: 'sweet@treats.com',
-          logo: 'https://images.unsplash.com/photo-1576506295286-5cda18df43e7?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Flurrys',
-          description: '10% off on cakes',
-          phone: '+91 98765 43230',
-          email: 'order@cakecorner.com',
-          logo: 'https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Creamy Cart',
-          description: '15% off above 400',
-          phone: '+91 98765 43231',
-          email: 'fresh@donutdelight.com',
-          logo: 'https://images.unsplash.com/photo-1551024506-0bccd828d307?w=100&h=100&fit=crop&crop=center',
-        },
-        {
-          name: 'Umai',
-          description: '10% off above 500',
-          phone: '+91 98765 43232',
-          email: 'cool@frozenyogurt.com',
-          logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYmt6Oks0KcHYzzKNfz-jjaXFMGILfDgRvMw&s',
-        },
-      ]
-    }
-  ];
+const partnerCategories = [
+  {
+    title: 'Food & Dining',
+    partners: [
+      { name: 'Roys Cafe', description: '15% off on all meals', phone: '+91 81234 56780', email: 'roy@royscafe.com' },
+      { name: 'Hakuna Matata', description: '20% off above 1000', phone: '+91 81234 56781', email: 'contact@hakunamatata.com' },
+      { name: 'Burger Shack', description: '15% off on combo meals', phone: '+91 81234 56782', email: 'info@burgershack.com' },
+      { name: 'The Tawa Punjab', description: '10% off on Indian cuisines', phone: '+91 81234 56783', email: 'hello@tawapunjab.com' },
+      { name: 'Bowls and Beyond', description: '10% off on all orders', phone: '+91 81234 56784', email: 'contact@bowlsnbeyond.com' },
+      { name: 'Caloria', description: '20% off above 400', phone: '+91 81234 56785', email: 'caloria@foodpartner.com' },
+      { name: 'Manna Rolls', description: '10% off above 300', phone: '+91 81234 56786', email: 'info@mannarolls.com' },
+      { name: 'A Cafe Story', description: '20% off on salads', phone: '+91 81234 56787', email: 'acafe@storymail.com' },
+      { name: 'ZZA Bar', description: '20% off above 799', phone: '+91 81234 56788', email: 'info@zzabar.com' },
+      { name: 'Cafe La Rochelle', description: '10% on entire bill', phone: '+91 81234 56789', email: 'contact@larochelle.com' },
+    ]
+  },
+  {
+    title: 'Gaming / Gyms',
+    partners: [
+      { name: 'Extreme Fitness', description: '20% off on memberships', phone: '+91 81234 56800', email: 'extreme@fitnesspro.com' },
+      { name: 'Level Up', description: '20% off on gaming sessions', phone: '+91 81234 56801', email: 'info@levelupgames.com' },
+      { name: 'Trigger Gaming', description: '15% off above 300', phone: '+91 81234 56802', email: 'trigger@gaming.com' },
+      { name: 'Glitch Games', description: '15% off on total bill', phone: '+91 81234 56803', email: 'glitch@gameshub.com' },
+    ]
+  },
+  {
+    title: 'Saloons',
+    partners: [
+      { name: 'Scissor Sound', description: '40% off on Womens Facials', phone: '+91 81234 56810', email: 'scissorsound@salons.com' },
+      { name: 'Naturals', description: '25% off on grooming', phone: '+91 81234 56811', email: 'naturals@salons.com' },
+      { name: 'Tony & Guy', description: '10% off above 1000', phone: '+91 81234 56812', email: 'tonyandguy@salons.com' },
+      { name: 'Plants', description: '20% off on all services', phone: '+91 81234 56813', email: 'plants@salons.com' },
+      { name: 'Habit', description: '15% off on all services', phone: '+91 81234 56814', email: 'habit@salons.com' },
+    ]
+  },
+  {
+    title: 'Desserts',
+    partners: [
+      { name: '7th Avenue Waffles', description: '20% off above 900', phone: '+91 81234 56820', email: 'waffles@7thavenue.com' },
+      { name: 'Flurrys', description: '10% off on cakes', phone: '+91 81234 56821', email: 'flurrys@desserts.com' },
+      { name: 'Creamy Cart', description: '15% off above 400', phone: '+91 81234 56822', email: 'creamy@cartdesserts.com' },
+      { name: 'Umai', description: '10% off above 500', phone: '+91 81234 56823', email: 'umai@desserts.com' },
+    ]
+  }
+];
 
   return (
     <div className="min-h-screen bg-black text-white">
