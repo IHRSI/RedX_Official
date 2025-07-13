@@ -1,73 +1,82 @@
-# Welcome to your Lovable project
+# 🔴 Red-X Official Website
 
-## Project info
+> 🚩 *“Where thrill meets purpose. The official digital home of MIT Manipal’s socio-adventure club — Red-X.”*
 
-**URL**: https://lovable.dev/projects/918ef8ed-bc14-4426-adf5-5004f6fc8acb
+🌐 [Visit Live Website](https://red-x-official.vercel.app)
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧭 About Red-X
 
-**Use Lovable**
+**Red-X** is a unique blend of **adventure** and **social impact**, rooted in the spirit of giving and growing together. We are students who trek mountains ⛰️, clean beaches 🏖️, teach kids 📚, and connect communities — all in a day’s work.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/918ef8ed-bc14-4426-adf5-5004f6fc8acb) and start prompting.
+### 🛡️ Our Pillars
+- **Adventure-X** – Organizing safe, thrilling treks around and beyond Karnataka.
+- **DISHA** – Empowering society through donation drives, cleanups, and awareness campaigns.
+- **Interact** – Talk show series with alumni, creators, and guests who inspire.
+- **Membership Drive** – Annual enrollment with perks through our business partners.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🌟 Features
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🎯 **Dynamic Home Page** – Our story, mission, and an interactive photo gallery
+- 🎫 **Membership Page** – Red-X Card details, perks, and instant form access
+- 🤝 **Partners Page** – Categorized list of collab brands with contact info and discounts
+- 👥 **Team Page** – Meet our Board and 20+ Committee members
+- 🧭 **Events Page** – Featuring 4 signature categories with rich visuals and descriptions
+- 🖥️ **Fully Responsive** – Seamless experience across phones, tablets, and desktops
+- 🎨 **Modern UI** – Built around an elegant red ⚡ black ⚪ white theme
+- ✨ **GSAP + Framer Animations** – Beautiful scroll and load effects
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🧾 Pages Overview
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+| Page         | Path           | Description                                                                 |
+|--------------|----------------|-----------------------------------------------------------------------------|
+| 🏠 Home       | `/`            | Intro, our mission, gallery, & navigation buttons                          |
+| 🗓️ Events     | `/events`      | Event stories under Treks, DISHA, Interact, and Membership Drive           |
+| 💳 Membership | `/membership`  | Perks of being a Red-X member + link to join via Google Form               |
+| 🤝 Partners   | `/partners`    | Partnered brands sorted by category with phone/email/discount info         |
+| 🧑‍🤝‍🧑 Team     | `/team`        | Meet Board Members + Committee faces, phrases, socials, and roles   |
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+---
 
-# Step 3: Install the necessary dependencies.
-npm i
+## 🛠️ Tech Stack
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+<p align="center">
+  <img src="https://seeklogo.com/images/N/next-js-logo-1A58798939-seeklogo.com.png" alt="Next.js" height="50" />
+  <img src="https://vitejs.dev/logo.svg" alt="Vite" height="50" />
+  <img src="https://cdn.worldvectorlogo.com/logos/react-2.svg" alt="React" height="50" />
+  <img src="https://cdn.worldvectorlogo.com/logos/typescript.svg" alt="TypeScript" height="50" />
+  <img src="https://cdn.worldvectorlogo.com/logos/tailwindcss.svg" alt="Tailwind CSS" height="50" />
+  <img src="https://avatars.githubusercontent.com/u/139895814?s=200&v=4" alt="shadcn/ui" height="50" />
+  <img src="https://logowik.com/wp-content/uploads/gsap-greensock-logo.png" alt="GSAP" height="50" />
+  <img src="https://seeklogo.com/images/F/framer-motion-logo-DA1E33CAA1-seeklogo.com.png" alt="Framer Motion" height="50" />
+  <img src="https://cdn.worldvectorlogo.com/logos/vercel-3.svg" alt="Vercel" height="50" />
+  <img src="https://seeklogo.com/images/G/google-forms-icon-logo-99174E7F6A-seeklogo.com.png" alt="Google Forms" height="50" />
+</p>
+
+### ⚙️ Breakdown
+
+- 🧠 **Next.js** – React framework with server-side rendering and routing
+- ⚡ **Vite** – Fast development server and build tool
+- ⚛️ **React** – Interactive UI components
+- 🔷 **TypeScript** – Type-safe development
+- 🎨 **Tailwind CSS** – Rapid and responsive styling
+- 🧩 **shadcn/ui** – Prebuilt accessible UI components
+- 🎞️ **GSAP** – High-performance scroll-triggered animations
+- 🌀 **Framer Motion** – Motion effects and component transitions
+- 🚀 **Vercel** – Hosting with seamless CI/CD
+- 📝 **Google Forms** – Used for membership registration
+
+---
+
+## 🚀 Getting Started (Local Dev)
+
+```bash
+git clone https://github.com/IHRSI/RedX_Official.git
+cd RedX_Official
+npm install
 npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/918ef8ed-bc14-4426-adf5-5004f6fc8acb) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
