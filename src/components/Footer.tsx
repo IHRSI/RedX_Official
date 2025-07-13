@@ -31,7 +31,7 @@ const Footer = () => {
                 className="flex items-center space-x-3 text-gray-400 hover:text-red-400 transition-all duration-300 hover:translate-x-1"
               >
                 <Mail size={18} className="text-red-500" />
-                <span>redxmanipal@gmail.com</span>
+                <span>redx.mit@manipal.edu</span>
               </a>
               <a
                 href="tel:+919876543210"
