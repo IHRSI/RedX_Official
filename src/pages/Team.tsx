@@ -26,7 +26,7 @@ const Team = () => {
       name: 'Akshay Teja',
       role: 'Treasurer',
       phrase: 'Managing resources with precision',
-      image: 'https://media.licdn.com/dms/image/v2/D5603AQHGXUvHQ8wY6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732833443416?e=1758153600&v=beta&t=NyZl2Tw2rFXlVePBXqdo5QALyUoXpEpQDRsgB_jJGu4,
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQHGXUvHQ8wY6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732833443416?e=1758153600&v=beta&t=NyZl2Tw2rFXlVePBXqdo5QALyUoXpEpQDRsgB_jJGu4',
       instagram: 'vikram_redx',
       linkedin: 'https://www.linkedin.com/in/akshay-tumunuri/',
       email: 'akshay@redxmanipal.com',
