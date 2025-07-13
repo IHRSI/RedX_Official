@@ -73,7 +73,24 @@
 
 ---
 
-## 🚀 Getting Started (Local Dev)
+<!--## 📸 Preview
+
+![Red-X Website Preview](https://i.imgur.com/xXYZabc.png) <!-- Replace with actual screenshot URL if needed -->
+
+## 📌 How to Contribute
+
+We welcome contributions from developers, designers, and enthusiasts!  
+Whether it's improving visuals, adding animations, or fixing bugs — we’d love your input!
+
+### 🧩 Steps:
+
+1. **Fork the Repository**
+2. **Clone your Fork**
+   ```bash
+   git clone https://github.com/your-username/red-x-official.git
+   cd red-x-official
+
+## 🚀 How to Run Locally
 
 ```bash
 git clone https://github.com/IHRSI/RedX_Official.git
