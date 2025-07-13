@@ -5,13 +5,13 @@ import { Instagram, Linkedin, Mail } from 'lucide-react';
 const Team = () => {
   const executiveBoard = [
     {
-      name: 'Arjun Sharma',
+      name: 'Vyom Chopra',
       role: 'President',
       phrase: 'Leading with passion and purpose',
-      image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&h=300&fit=crop&crop=face',
+      image: 'https://media.licdn.com/dms/image/v2/D4D03AQHMjo4aWLCpCw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1731590622615?e=1758153600&v=beta&t=bwERkG76usi41ZnZLRSxMMxb2xjrOlW1f4wllXxadEQ',
       instagram: 'arjun_redx',
-      linkedin: 'arjunsharma',
-      email: 'arjun@redxmanipal.com',
+      linkedin: 'https://www.linkedin.com/in/vyom-chopra-86aab525a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+      email: 'vyom@redxmanipal.com',
     },
     {
       name: 'Priya Nair',
@@ -23,22 +23,22 @@ const Team = () => {
       email: 'priya@redxmanipal.com',
     },
     {
-      name: 'Vikram Singh',
+      name: 'Akshay Teja',
       role: 'Treasurer',
       phrase: 'Managing resources with precision',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=300&h=300&fit=crop&crop=face',
+      image: 'https://media.licdn.com/dms/image/v2/D5603AQHGXUvHQ8wY6w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1732833443416?e=1758153600&v=beta&t=NyZl2Tw2rFXlVePBXqdo5QALyUoXpEpQDRsgB_jJGu4,
       instagram: 'vikram_redx',
-      linkedin: 'vikramsingh',
-      email: 'vikram@redxmanipal.com',
+      linkedin: 'https://www.linkedin.com/in/akshay-tumunuri/',
+      email: 'akshay@redxmanipal.com',
     },
     {
-      name: 'Anjali Patel',
+      name: 'Aditya Akash Sahu',
       role: 'General Secretary',
       phrase: 'Service before self, always',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300&h=300&fit=crop&crop=face',
+      image: 'https://drive.google.com/file/d/1gyV8kNNGrgbgSkSGGFKyUi1NsffxsgmP/view',
       instagram: 'anjali_secretary',
-      linkedin: 'anjalipatel',
-      email: 'anjali@redxmanipal.com',
+      linkedin: 'https://www.linkedin.com/in/aditya-akash-sahu-7bb34a297/',
+      email: 'sahu@redxmanipal.com',
     },
     {
       name: 'Rahul Kumar',
