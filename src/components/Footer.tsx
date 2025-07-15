@@ -27,7 +27,7 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-red-400">Contact Us</h3>
             <div className="space-y-3">
               <a
-                href="mailto:redxmanipal@gmail.com"
+                href="mailto:redx.mit@manipal.edu"
                 className="flex items-center space-x-3 text-gray-400 hover:text-red-400 transition-all duration-300 hover:translate-x-1"
               >
                 <Mail size={18} className="text-red-500" />
