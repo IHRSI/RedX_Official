@@ -326,7 +326,7 @@ const Partners = () => {
             </div>
             
             <a
-              href="mailto:redxmanipal@gmail.com?subject=Partnership Inquiry"
+              href="mailto:redx.mit@manipal.edu?subject=Partnership Inquiry"
               className="inline-flex items-center space-x-3 redx-gradient text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 glow-effect transform hover:rotate-1"
             >
               <Mail size={24} />
