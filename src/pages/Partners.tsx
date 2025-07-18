@@ -312,7 +312,7 @@ const Partners = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
-                <div className="text-4xl font-bold text-red-400 mb-2">300+</div>
+                <div className="text-4xl font-bold text-red-400 mb-2">350+</div>
                 <p className="text-gray-300">Active Red-X Members</p>
               </div>
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
