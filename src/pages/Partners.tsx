@@ -316,7 +316,7 @@ const Partners = () => {
                 <p className="text-gray-300">Active Red-X Members</p>
               </div>
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
-                <div className="text-4xl font-bold text-red-400 mb-2">18+</div>
+                <div className="text-4xl font-bold text-red-400 mb-2">15+</div>
                 <p className="text-gray-300">Events Per Year</p>
               </div>
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
