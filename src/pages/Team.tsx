@@ -102,7 +102,7 @@ const Team = () => {
 
           {/* Center-aligned: 3 on top, 2 on bottom */}
           <div className="flex flex-col items-center gap-8">
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
               {executiveBoard.slice(0, 3).map((member, index) => (
                 <div
                   key={index}
@@ -121,7 +121,7 @@ const Team = () => {
                 </div>
               ))}
             </div>
-            <div className="flex flex-wrap justify-center gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
               {executiveBoard.slice(3, 5).map((member, index) => (
                 <div
                   key={index}
