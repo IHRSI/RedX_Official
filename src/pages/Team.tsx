@@ -66,7 +66,7 @@ const Team = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white text-center">
       {/* Hero Section */}
       <section className="py-20 redx-gradient relative overflow-hidden">
         <Suspense fallback={null}>

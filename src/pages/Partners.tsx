@@ -72,24 +72,24 @@ const partnerCategories = [
 
 const PartnerCard = ({ partner, index }: { partner: typeof partnerCategories[0]['partners'][0]; index: number }) => (
   <div
-    className="bg-gray-800 border-2 border-red-600/30 rounded-2xl p-8 hover-lift glow-effect animate-fade-in-up transform hover:scale-105 transition-all duration-500 hover:border-red-600/60 relative overflow-hidden group w-full max-w-sm"
+    className="bg-gray-800 border-2 border-red-600/30 rounded-2xl p-8 hover-lift glow-effect animate-fade-in-up transform hover:scale-105 transition-all duration-500 hover:border-red-600/60 relative overflow-hidden group w-full max-w-sm text-center"
     style={{ animationDelay: `${index * 0.1}s` }}
   >
     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-red-400 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500"></div>
     <div className="absolute inset-0 bg-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
     
-    <div className="flex items-center mb-6 relative z-10">
+    <div className="flex flex-col items-center mb-6 relative z-10">
       <img
         src={partner.logo}
         alt={`${partner.name} logo`}
-        className="w-20 h-20 rounded-xl object-cover mr-4 border-2 border-red-600/40 group-hover:border-red-600 transition-colors duration-300 group-hover:shadow-red-600/50 group-hover:shadow-lg"
+        className="w-20 h-20 rounded-xl object-cover mb-3 border-2 border-red-600/40 group-hover:border-red-600 transition-colors duration-300 group-hover:shadow-red-600/50 group-hover:shadow-lg"
       />
       <div>
         <h3 className="text-xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">{partner.name}</h3>
       </div>
     </div>
     
-    <div className="relative z-10">
+    <div className="relative z-10 text-center">
       <p className="text-red-300 mb-6 font-semibold text-lg bg-red-600/10 p-3 rounded-lg border border-red-600/30 group-hover:bg-red-600/20 transition-colors duration-300">{partner.description}</p>
 
       <div className="w-full bg-red-600/20 text-red-200 px-6 py-3 rounded-xl font-semibold text-center border border-red-600/30">
@@ -101,7 +101,7 @@ const PartnerCard = ({ partner, index }: { partner: typeof partnerCategories[0][
 
 const Partners = () => {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-black text-white text-center">
       {/* Hero Section with 3D */}
       <section className="py-24 redx-gradient relative overflow-hidden">
         <Suspense fallback={null}>
