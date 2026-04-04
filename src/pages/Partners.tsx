@@ -156,7 +156,7 @@ const Partners = () => {
             </div>
             
             <div className="flex justify-center">
-              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 w-full max-w-7xl justify-items-center">
+              <div className="flex flex-wrap justify-center gap-8 w-full max-w-7xl">
                 {category.partners.map((partner, index) => (
                   <PartnerCard key={index} partner={partner} index={index} />
                 ))}

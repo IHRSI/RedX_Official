@@ -102,7 +102,7 @@ const Team = () => {
 
           {/* Center-aligned: 3 on top, 2 on bottom */}
           <div className="flex flex-col items-center gap-8">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 justify-items-center">
+            <div className="flex flex-wrap justify-center gap-8">
               {executiveBoard.slice(0, 3).map((member, index) => (
                 <div
                   key={index}
@@ -121,7 +121,7 @@ const Team = () => {
                 </div>
               ))}
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 justify-items-center">
+            <div className="flex flex-wrap justify-center gap-8">
               {executiveBoard.slice(3, 5).map((member, index) => (
                 <div
                   key={index}
@@ -162,7 +162,7 @@ const Team = () => {
             {boardDepartments.map((dept, deptIndex) => (
               <div key={dept.department} className="bg-gray-900/60 border border-red-600/20 rounded-2xl p-6">
                 <h3 className="text-2xl font-bold text-red-300 mb-6 text-center">{dept.department}</h3>
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center">
+                <div className="flex flex-wrap justify-center gap-6">
                   {dept.members.map((member, index) => (
                     <div
                       key={member.name}
@@ -195,7 +195,7 @@ const Team = () => {
             <div className="w-20 h-1 bg-red-600 mx-auto rounded-full mt-4"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center max-w-4xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-6 max-w-4xl mx-auto">
             {advisoryCommittee.map((member, index) => (
               <div
                 key={member.name}
