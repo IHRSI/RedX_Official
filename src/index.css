@@ -1,0 +1,315 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Red-X Color Palette - Enhanced with Black Background */
+@layer base {
+  :root {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 0 100% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 100% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Red-X Custom Colors - Enhanced */
+    --redx-red: 0 100% 50%;
+    --redx-red-intense: 0 100% 45%;
+    --redx-red-bright: 0 100% 55%;
+    --redx-dark: 0 0% 0%;
+    --redx-light: 0 0% 100%;
+    --redx-gray: 0 0% 60%;
+    --redx-red-light: 0 100% 85%;
+    --redx-red-dark: 0 100% 35%;
+    --redx-card: 0 0% 8%;
+    --redx-border: 0 0% 20%;
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 0 0% 100%;
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 100%;
+    --primary: 0 100% 50%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-black text-white font-sans antialiased;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .redx-gradient {
+    background: linear-gradient(135deg, hsl(var(--redx-red-intense)), hsl(var(--redx-red-bright)));
+  }
+  
+  .redx-gradient-light {
+    background: linear-gradient(135deg, hsl(var(--redx-red-light)), hsl(var(--redx-red)));
+  }
+  
+  .redx-text-gradient {
+    background: linear-gradient(135deg, hsl(var(--redx-red-bright)), hsl(var(--redx-red-intense)));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  .animate-fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+  
+  .animate-scale-in {
+    animation: scaleIn 0.6s ease-out forwards;
+  }
+  
+  .hover-lift {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px -5px rgba(255, 0, 0, 0.4), 0 15px 20px -5px rgba(255, 0, 0, 0.2);
+    border-color: hsl(var(--redx-red));
+  }
+
+  .glow-effect {
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.3);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .glow-effect:hover {
+    box-shadow: 0 0 50px rgba(255, 0, 0, 0.6), 0 0 100px rgba(255, 0, 0, 0.3);
+  }
+
+  /* Enhanced Heading Glow Effect */
+  .heading-glow {
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    text-shadow: 0 0 20px rgba(255, 0, 0, 0.3);
+  }
+
+  .heading-glow:hover {
+    text-shadow: 
+      0 0 30px rgba(255, 0, 0, 0.8),
+      0 0 60px rgba(255, 0, 0, 0.6),
+      0 0 90px rgba(255, 0, 0, 0.4),
+      0 0 120px rgba(255, 0, 0, 0.2);
+    transform: scale(1.05);
+    color: #ff4444;
+  }
+
+  .heading-glow::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: -1;
+  }
+
+  .heading-glow:hover::before {
+    opacity: 1;
+    animation: pulse-glow 2s infinite;
+  }
+
+  /* Scroll-triggered animations */
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-on-scroll.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .animate-on-scroll-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-on-scroll-left.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .animate-on-scroll-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .animate-on-scroll-right.animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slideInRight 0.8s ease-out forwards;
+}
+
+@keyframes pulse-red {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.6);
+  }
+  50% {
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0);
+  }
+}
+
+.animate-pulse-red {
+  animation: pulse-red 3s infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 8s linear infinite;
+}
+
+/* Enhanced fade in animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out forwards;
+}
+
+/* Parallax scroll effects */
+.parallax-bg {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Text shine effect */
+.text-shine {
+  background: linear-gradient(90deg, #fff 25%, #ff0000 50%, #fff 75%);
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.6;
+  }
+}
