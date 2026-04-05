@@ -9,60 +9,91 @@ const AnimatedTorus = lazy(() => import('../components/3d/AnimatedTorus'));
 const getPartnerLogo = (name: string) =>
   `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=111827&color=ef4444&size=120&bold=true`;
 
+const partnerLogoPaths = [
+  '/uploads/partners/1.png',
+  '/uploads/partners/2.png',
+  '/uploads/partners/3.png',
+  '/uploads/partners/4.png',
+  '/uploads/partners/5.png',
+  '/uploads/partners/6.png',
+  '/uploads/partners/7.png',
+  '/uploads/partners/8.png',
+  '/uploads/partners/9.png',
+  '/uploads/partners/10.png',
+  '/uploads/partners/11.png',
+  '/uploads/partners/12.png',
+  '/uploads/partners/13.png',
+  '/uploads/partners/14.png',
+  '/uploads/partners/15.png',
+  '/uploads/partners/17.png',
+  '/uploads/partners/18.png',
+  '/uploads/partners/19.png',
+  '/uploads/partners/20.png',
+  '/uploads/partners/21.png',
+  '/uploads/partners/22.png',
+  '/uploads/partners/23.png',
+  '/uploads/partners/24.png',
+  '/uploads/partners/26.png',
+];
+
+let partnerLogoCursor = 0;
+
+const getOrderedPartnerLogo = () => partnerLogoPaths[partnerLogoCursor++] ?? '';
+
 
 const partnerCategories = [
   {
     title: 'Food & Dining',
     partners: [
-      { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: getPartnerLogo('ZZA Bar') },
-      { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: getPartnerLogo('Cafe Story') },
-      { name: 'Hungary House', description: '10% off above 500', logo: getPartnerLogo('Hungary House') },
-      { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: getPartnerLogo('Tawa Punjab') },
-      { name: 'Hakuna Matata', description: '10% off (excluding combos/discounted items)', logo: getPartnerLogo('Hakuna Matata') },
-      { name: 'Burger Shack', description: '5% (499-999), 10% (999-1499), 15% (1499+)', logo: getPartnerLogo('Burger Shack') },
-      { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000', logo: getPartnerLogo('DTR') },
-      { name: 'Manna Rolls', description: '10% off all purchases', logo: getPartnerLogo('Manna Rolls') },
-      { name: '7 Bees', description: '15% off all purchases', logo: getPartnerLogo('7 Bees') },
+      { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: getOrderedPartnerLogo() },
+      { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: getOrderedPartnerLogo() },
+      { name: 'Hungary House', description: '10% off above 500', logo: getOrderedPartnerLogo() },
+      { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: getOrderedPartnerLogo() },
+      { name: 'Hakuna Matata', description: '10% off (excluding combos/discounted items)', logo: getOrderedPartnerLogo() },
+      { name: 'Burger Shack', description: '5% (499-999), 10% (999-1499), 15% (1499+)', logo: getOrderedPartnerLogo() },
+      { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000', logo: getOrderedPartnerLogo() },
+      { name: 'Manna Rolls', description: '10% off all purchases', logo: getOrderedPartnerLogo() },
+      { name: '7 Bees', description: '15% off all purchases', logo: getOrderedPartnerLogo() },
     ]
   },
   {
     title: 'Gaming',
     partners: [
-      { name: 'Glitch Games', description: '10% off everything', logo: getPartnerLogo('Glitch Games') },
-      { name: 'Black Tiger', description: '15% off all bills', logo: getPartnerLogo('Black Tiger') },
-      { name: 'Strikers', description: '15% off all charges', logo: getPartnerLogo('Strikers') },
-      { name: 'Trigger', description: '15% off above 300', logo: getPartnerLogo('Trigger') },
+      { name: 'Glitch Games', description: '10% off everything', logo: getOrderedPartnerLogo() },
+      { name: 'Black Tiger', description: '15% off all bills', logo: getOrderedPartnerLogo() },
+      { name: 'Strikers', description: '15% off all charges', logo: getOrderedPartnerLogo() },
+      { name: 'Trigger', description: '15% off above 300', logo: getOrderedPartnerLogo() },
     ]
   },
   {
     title: 'Gyms',
     partners: [
-      { name: 'Superhuman', description: '40% off 6 & 12-month packages', logo: getPartnerLogo('Superhuman') },
-      { name: 'Extreme Fitness', description: '20% off (3, 9, 12-month memberships)', logo: getPartnerLogo('Extreme Fitness') },
-      { name: 'Adiyoga Wellness Studio', description: '15% off (3-6 months), 20% off (1 year)', logo: getPartnerLogo('Adiyoga Wellness Studio') },
+      { name: 'Superhuman', description: '40% off 6 & 12-month packages', logo: getOrderedPartnerLogo() },
+      { name: 'Extreme Fitness', description: '20% off (3, 9, 12-month memberships)', logo: getOrderedPartnerLogo() },
+      { name: 'Adiyoga Wellness Studio', description: '15% off (3-6 months), 20% off (1 year)', logo: getOrderedPartnerLogo() },
     ]
   },
   {
     title: 'Saloons',
     partners: [
-      { name: 'Naturals', description: '25% off up to 1000, 30% above 1000', logo: getPartnerLogo('Naturals') },
-      { name: 'Scissors and Sound', description: '40% (female hair), 30% (facials), 10% (men above 1000)', logo: getPartnerLogo('Scissors and Sound') },
-      { name: 'Lucents', description: '10% off above 999', logo: getPartnerLogo('Lucents') },
+      { name: 'Naturals', description: '25% off up to 1000, 30% above 1000', logo: getOrderedPartnerLogo() },
+      { name: 'Scissors and Sound', description: '40% (female hair), 30% (facials), 10% (men above 1000)', logo: getOrderedPartnerLogo() },
+      { name: 'Lucents', description: '10% off above 999', logo: getOrderedPartnerLogo() },
     ]
   },
   {
     title: 'Desserts',
     partners: [
-      { name: 'Flurrys', description: '10% on cakes, 5% on pastries', logo: getPartnerLogo('Flurrys') },
-      { name: 'Smoocho', description: '10% above 500', logo: getPartnerLogo('Smoocho') },
-      { name: 'Uncle Bros', description: '10% off above 200', logo: getPartnerLogo('Uncle Bros') },
-      { name: 'Just Juice', description: '10% off all purchases', logo: getPartnerLogo('Just Juice') },
+      { name: 'Flurrys', description: '10% on cakes, 5% on pastries', logo: getOrderedPartnerLogo() },
+      { name: 'Smoocho', description: '10% above 500', logo: getOrderedPartnerLogo() },
+      { name: 'Uncle Bros', description: '10% off above 200', logo: getOrderedPartnerLogo() },
+      { name: 'Just Juice', description: '10% off all purchases', logo: getOrderedPartnerLogo() },
     ]
   },
   {
     title: 'Others',
     partners: [
-      { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: getPartnerLogo('M2M Laptop Repairs') },
+      { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: getOrderedPartnerLogo() },
       { name: 'Qstar Store', description: '10% above 1200, 15% above 2200', logo: getPartnerLogo('Qstar Store') },
       { name: 'Maniac', description: '15% off all purchases', logo: getPartnerLogo('Maniac') },
       { name: 'Concept', description: '20% off all purchases', logo: getPartnerLogo('Concept') },
