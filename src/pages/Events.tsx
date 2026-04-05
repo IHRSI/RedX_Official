@@ -339,7 +339,7 @@ const Events = () => {
                 Get Membership
               </a>
               <a
-                href="mailto:redx.mit@manipal.edu?subject=Event Inquiry"
+                href="mailto:redxmanipal@gmail.com?subject=Event Inquiry"
                 className="inline-block bg-transparent border-2 border-red-600 text-red-400 hover:bg-red-600 hover:text-white px-8 py-4 rounded-xl font-semibold transition-colors"
               >
                 Contact Us
