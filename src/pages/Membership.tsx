@@ -10,7 +10,7 @@ const Membership = () => {
     {
       icon: <Gift className="text-red-400" size={24} />,
       title: 'Exclusive Partner Discounts',
-      description: 'Get special discounts at 20+ partner restaurants, gyms, salons, and entertainment venues across Manipal.'
+      description: 'Get special discounts at 25+ partner restaurants, gyms, salons, and entertainment venues across Manipal.'
     },
     {
       icon: <Users className="text-red-400" size={24} />,
@@ -20,33 +20,33 @@ const Membership = () => {
     {
       icon: <Calendar className="text-red-400" size={24} />,
       title: 'Early Access to Events',
-      description: 'Be the first to register for DISHA drives, donation events, and exclusive member meetups.'
+      description: 'Be the first to register for DISHA drives, donation events, and exclusive member events.'
     },
     {
       icon: <Award className="text-red-400" size={24} />,
       title: 'Interact Series Access',
-      description: 'Reserved seats for guest speaker events, alumni interactions, and premium workshop sessions.'
+      description: 'Reserved spots for guest speaker events, alumni interactions, and workshop sessions.'
     },
     {
       icon: <Star className="text-red-400" size={24} />,
       title: 'Exclusive Merchandise',
-      description: 'Access to limited-edition Red-X branded merchandise and gear before public release.'
+      description: 'Access to limited-edition Red-X branded merchandise before public release.'
     },
     {
       icon: <Users className="text-red-400" size={24} />,
       title: 'Community Network',
-      description: 'Connect with 500+ active members, alumni network, and industry professionals through our platform.'
+      description: 'Connect with 150+ active members, alumni network, and industry professionals through our platform.'
     }
   ];
 
   const faqs = [
     {
       question: 'How do I use my Red-X membership card?',
-      answer: 'Simply show your digital or physical Red-X membership card at any partner establishment to avail exclusive discounts. You can also access member-only events and priority bookings through our platform.'
+      answer: 'Simply show your physical Red-X membership card at any partner establishment to avail exclusive discounts. You can also access member-only events and priority bookings through our platform.'
     },
     {
       question: 'What is the validity of the membership?',
-      answer: 'Your Red-X membership is valid for one full academic year from the date of purchase. You can renew it at a discounted rate for subsequent years.'
+      answer: 'Your Red-X membership is valid for one full academic year from the date of purchase.'
     },
     {
       question: 'Can I get a refund if I\'m not satisfied?',
@@ -54,15 +54,15 @@ const Membership = () => {
     },
     {
       question: 'Are there any additional charges for events?',
-      answer: 'While membership gives you priority access and discounted rates, some premium events may have additional charges. Members always get the best prices available.'
+      answer: 'While membership gives you priority access and discounted rates, some events may have additional charges. Members always get the best prices available.'
     },
     {
       question: 'How do I access partner discounts?',
-      answer: 'Your membership card (digital or physical) serves as your discount pass. Show it at any partner location to receive your exclusive member discount.'
+      answer: 'Your membership card serves as your discount pass. Show it at any partner location before billing to receive your exclusive member discount.'
     },
     {
       question: 'Can I share my membership with friends?',
-      answer: 'Memberships are individual and non-transferable. However, you can refer friends and earn rewards for successful referrals!'
+      answer: 'Memberships are individual and non-transferable. However, you can refer friends for successful referrals!'
     }
   ];
 
