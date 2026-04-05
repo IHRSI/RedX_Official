@@ -5,6 +5,25 @@ import { Instagram, Linkedin, Mail, Users, Heart, Star, Zap } from 'lucide-react
 const FloatingParticles = lazy(() => import('../components/3d/FloatingParticles'));
 const AnimatedTorus = lazy(() => import('../components/3d/AnimatedTorus'));
 
+const teamPhotos = [
+  '/uploads/team/1.jpg',
+  '/uploads/team/2.jpg',
+  '/uploads/team/3.jpg',
+  '/uploads/team/4.jpg',
+  '/uploads/team/5.jpg',
+  '/uploads/team/6.jpg',
+  '/uploads/team/7.JPG',
+  '/uploads/team/8.JPG',
+  '/uploads/team/9.JPG',
+  '/uploads/team/10.jpg',
+  '/uploads/team/11.jpg',
+  '/uploads/team/12.jpg',
+  '/uploads/team/13.jpg',
+  '/uploads/team/14.jpg',
+  '/uploads/team/15.png',
+  '/uploads/team/16.png',
+];
+
 const Team = () => {
   const executiveBoard = [
     { name: 'Anushka Harish', role: 'President', quote: 'Lead with clarity, serve with heart.', email: 'anushka.harish28@gmail.com', linkedin: 'https://www.linkedin.com/in/anushka-h-108454200/', instagram: 'https://www.instagram.com/anushkaharish28?igsh=OTFvc2hvaTUzcGYw' },
@@ -52,6 +71,8 @@ const Team = () => {
   ];
 
   const getAvatar = (name: string) => `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=111827&color=ef4444&size=300&bold=true`;
+
+  const getTeamPhoto = (index: number) => teamPhotos[index] ?? getAvatar('Red-X');
 
   const SocialLink = ({ href, icon: Icon, label }: { href: string; icon: any; label: string }) => (
     <a
@@ -109,7 +130,7 @@ const Team = () => {
                   className="bg-gray-800/90 backdrop-blur-sm border border-red-600/30 rounded-2xl p-6 hover-lift text-center animate-fade-in-up glow-effect w-full max-w-xs"
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
-                  <img src={getAvatar(member.name)} alt={member.name} className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-2 border-red-600/50" />
+                  <img src={getTeamPhoto(index)} alt={member.name} className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-2 border-red-600/50" />
                   <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
                   <p className="text-red-400 font-semibold mb-2">{member.role}</p>
                   <p className="text-gray-400 text-sm mb-4 italic">"{member.quote}"</p>
@@ -128,7 +149,7 @@ const Team = () => {
                   className="bg-gray-800/90 backdrop-blur-sm border border-red-600/30 rounded-2xl p-6 hover-lift text-center animate-fade-in-up glow-effect w-full max-w-xs"
                   style={{ animationDelay: `${(index + 3) * 0.1}s` }}
                 >
-                  <img src={getAvatar(member.name)} alt={member.name} className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-2 border-red-600/50" />
+                  <img src={getTeamPhoto(index + 3)} alt={member.name} className="w-28 h-28 rounded-full mx-auto mb-4 object-cover border-2 border-red-600/50" />
                   <h3 className="text-xl font-bold text-white mb-1">{member.name}</h3>
                   <p className="text-red-400 font-semibold mb-2">{member.role}</p>
                   <p className="text-gray-400 text-sm mb-4 italic">"{member.quote}"</p>
@@ -169,7 +190,7 @@ const Team = () => {
                       className="bg-gray-800/90 backdrop-blur-sm border border-red-600/30 rounded-xl p-6 hover-lift text-center animate-fade-in-up glow-effect w-full max-w-xs"
                       style={{ animationDelay: `${(deptIndex + index) * 0.06}s` }}
                     >
-                      <img src={getAvatar(member.name)} alt={member.name} className="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-red-600/30" />
+                      <img src={getTeamPhoto(5 + boardDepartments.slice(0, deptIndex).reduce((sum, department) => sum + department.members.length, 0) + index)} alt={member.name} className="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-red-600/30" />
                       <h3 className="text-lg font-semibold text-white mb-1">{member.name}</h3>
                       <p className="text-red-400 font-medium text-sm mb-1">{member.role}</p>
                       <p className="text-gray-400 text-xs mb-3 italic">"{member.quote}"</p>
@@ -202,7 +223,7 @@ const Team = () => {
                 className="bg-gray-800/90 backdrop-blur-sm border border-red-600/30 rounded-xl p-6 hover-lift text-center animate-fade-in-up glow-effect w-full max-w-xs"
                 style={{ animationDelay: `${index * 0.08}s` }}
               >
-                <img src={getAvatar(member.name)} alt={member.name} className="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-red-600/30" />
+                <img src={getTeamPhoto(14 + index)} alt={member.name} className="w-20 h-20 rounded-full mx-auto mb-3 object-cover border-2 border-red-600/30" />
                 <h3 className="text-lg font-semibold text-white mb-1">{member.name}</h3>
                 <p className="text-red-400 font-medium text-sm mb-1">{member.role}</p>
                 <p className="text-gray-400 text-xs mb-3 italic">"{member.quote}"</p>
