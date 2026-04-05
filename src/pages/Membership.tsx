@@ -109,7 +109,7 @@ const Membership = () => {
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <a
-                href="https://forms.google.com/redx-membership"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScx98LCxax4h05BJhoqPvLmg8TzC4LEstGpmN1hd3MHym8Tng/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-white text-red-600 px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 glow-effect hover:bg-red-50"
@@ -117,7 +117,7 @@ const Membership = () => {
                 <span>Get Your Membership</span>
               </a>
               <a
-                href="https://forms.google.com/redx-membership"
+                href="https://docs.google.com/forms/d/e/1FAIpQLScx98LCxax4h05BJhoqPvLmg8TzC4LEstGpmN1hd3MHym8Tng/viewform"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-red-600/20 backdrop-blur-sm text-white px-8 py-4 rounded-xl font-bold text-lg border-2 border-white/30 transition-all duration-300 hover:scale-105 hover:bg-white/10"
@@ -165,7 +165,7 @@ const Membership = () => {
 
           <div className="text-center mt-16 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <a
-              href="https://forms.google.com/redx-membership"
+              href="https://docs.google.com/forms/d/e/1FAIpQLScx98LCxax4h05BJhoqPvLmg8TzC4LEstGpmN1hd3MHym8Tng/viewform"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center redx-gradient text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 glow-effect"
@@ -213,10 +213,10 @@ const Membership = () => {
           <div className="text-center mt-12 animate-fade-in-up" style={{ animationDelay: '0.8s' }}>
             <p className="text-gray-400 mb-6">Still have questions? We're here to help!</p>
             <a
-              href="mailto:redxmanipal@gmail.com"
+              href="mailto:redx.mit@manipal.edu"
               className="inline-flex items-center text-red-400 hover:text-red-300 transition-colors font-semibold"
             >
-              Contact us at redxmanipal@gmail.com
+              Contact us at redx.mit@manipal.edu
             </a>
           </div>
         </div>

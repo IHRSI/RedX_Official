@@ -12,7 +12,7 @@ const partnerCategories = [
   {
     title: 'Food & Dining',
     partners: [
-      { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: getPartnerLogo('ZZA Bar') },
+      { name: 'ZZA Bar', description: '15% off above 399, 20% off above 799', logo: getPartnerLogo('ZZA Bar') },
       { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: getPartnerLogo('Cafe Story') },
       { name: 'Hungary House', description: '10% off above 500', logo: getPartnerLogo('Hungary House') },
       { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: getPartnerLogo('Tawa Punjab') },
@@ -197,7 +197,7 @@ const Partners = () => {
             </div>
             
             <a
-              href="mailto:redxmanipal@gmail.com?subject=Partnership Inquiry"
+              href="mailto:redx.mit@manipal.edu?subject=Partnership Inquiry"
               className="inline-flex items-center space-x-3 redx-gradient text-white px-10 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105 glow-effect transform hover:rotate-1"
             >
               <Mail size={24} />
