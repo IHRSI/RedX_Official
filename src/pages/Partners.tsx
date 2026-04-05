@@ -6,6 +6,9 @@ import { useIsMobile } from '../hooks/use-mobile';
 const FloatingParticles = lazy(() => import('../components/3d/FloatingParticles'));
 const AnimatedTorus = lazy(() => import('../components/3d/AnimatedTorus'));
 
+const getPartnerLogo = (name: string) =>
+  `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=111827&color=ef4444&size=120&bold=true`;
+
 const partnerLogo = (number: number) => `/uploads/partners/${number}.png`;
 
 
@@ -79,13 +82,13 @@ const PartnerCard = ({ partner, index }: { partner: typeof partnerCategories[0][
     <div className="absolute inset-0 bg-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
     
     <div className="flex flex-col items-center mb-6 relative z-10">
-      {partner.logo ? (
-        <img
-          src={partner.logo}
-          alt={`${partner.name} logo`}
-          className="w-20 h-20 rounded-xl object-cover mb-3 border-2 border-red-600/40 group-hover:border-red-600 transition-colors duration-300 group-hover:shadow-red-600/50 group-hover:shadow-lg"
-        />
-      ) : null}
+      <img
+        src={partner.logo ?? getPartnerLogo(partner.name)}
+        alt={`${partner.name} logo`}
+        loading="lazy"
+        decoding="async"
+        className="w-20 h-20 rounded-xl object-cover mb-3 border-2 border-red-600/40 group-hover:border-red-600 transition-colors duration-300 group-hover:shadow-red-600/50 group-hover:shadow-lg"
+      />
       <div>
         <h3 className="text-xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">{partner.name}</h3>
       </div>
