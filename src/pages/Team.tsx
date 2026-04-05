@@ -302,7 +302,7 @@ const Team = () => {
               Be part of something bigger and make a real impact in the MIT Manipal community.
             </p>
             <a
-              href="mailto:redxmanipal@gmail.com?subject=Interested in Joining Red-X Team"
+              href="mailto:redx.mit@manipal.edu?subject=Interested in Joining Red-X Team"
               className="inline-block redx-gradient text-white px-8 py-4 rounded-xl font-semibold hover:scale-105 transition-transform glow-effect"
             >
               Get in Touch
