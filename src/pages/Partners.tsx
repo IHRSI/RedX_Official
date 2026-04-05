@@ -6,98 +6,66 @@ import { useIsMobile } from '../hooks/use-mobile';
 const FloatingParticles = lazy(() => import('../components/3d/FloatingParticles'));
 const AnimatedTorus = lazy(() => import('../components/3d/AnimatedTorus'));
 
-const getPartnerLogo = (name: string) =>
-  `https://ui-avatars.com/api/?name=${encodeURIComponent(name)}&background=111827&color=ef4444&size=120&bold=true`;
-
-const partnerLogoPaths = [
-  '/uploads/partners/1.png',
-  '/uploads/partners/2.png',
-  '/uploads/partners/3.png',
-  '/uploads/partners/4.png',
-  '/uploads/partners/5.png',
-  '/uploads/partners/6.png',
-  '/uploads/partners/7.png',
-  '/uploads/partners/8.png',
-  '/uploads/partners/9.png',
-  '/uploads/partners/10.png',
-  '/uploads/partners/11.png',
-  '/uploads/partners/12.png',
-  '/uploads/partners/13.png',
-  '/uploads/partners/14.png',
-  '/uploads/partners/15.png',
-  '/uploads/partners/17.png',
-  '/uploads/partners/18.png',
-  '/uploads/partners/19.png',
-  '/uploads/partners/20.png',
-  '/uploads/partners/21.png',
-  '/uploads/partners/22.png',
-  '/uploads/partners/23.png',
-  '/uploads/partners/24.png',
-  '/uploads/partners/26.png',
-];
-
-let partnerLogoCursor = 0;
-
-const getOrderedPartnerLogo = () => partnerLogoPaths[partnerLogoCursor++] ?? '';
+const partnerLogo = (number: number) => `/uploads/partners/${number}.png`;
 
 
 const partnerCategories = [
   {
     title: 'Food & Dining',
     partners: [
-      { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: getOrderedPartnerLogo() },
-      { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: getOrderedPartnerLogo() },
-      { name: 'Hungary House', description: '10% off above 500', logo: getOrderedPartnerLogo() },
-      { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: getOrderedPartnerLogo() },
-      { name: 'Hakuna Matata', description: '10% off (excluding combos/discounted items)', logo: getOrderedPartnerLogo() },
-      { name: 'Burger Shack', description: '5% (499-999), 10% (999-1499), 15% (1499+)', logo: getOrderedPartnerLogo() },
-      { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000', logo: getOrderedPartnerLogo() },
-      { name: 'Manna Rolls', description: '10% off all purchases', logo: getOrderedPartnerLogo() },
-      { name: '7 Bees', description: '15% off all purchases', logo: getOrderedPartnerLogo() },
+      { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: partnerLogo(1) },
+      { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: partnerLogo(2) },
+      { name: 'Hungary House', description: '10% off above 500', logo: partnerLogo(3) },
+      { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: partnerLogo(4) },
+      { name: 'Hakuna Matata', description: '10% off (excluding combos/discounted items)', logo: partnerLogo(5) },
+      { name: 'Burger Shack', description: '5% (499-999), 10% (999-1499), 15% (1499+)', logo: partnerLogo(6) },
+      { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000', logo: partnerLogo(7) },
+      { name: 'Manna Rolls', description: '10% off all purchases', logo: partnerLogo(8) },
+      { name: '7 Bees', description: '15% off all purchases', logo: partnerLogo(9) },
     ]
   },
   {
     title: 'Gaming',
     partners: [
-      { name: 'Glitch Games', description: '10% off everything', logo: getOrderedPartnerLogo() },
-      { name: 'Black Tiger', description: '15% off all bills', logo: getOrderedPartnerLogo() },
-      { name: 'Strikers', description: '15% off all charges', logo: getOrderedPartnerLogo() },
-      { name: 'Trigger', description: '15% off above 300', logo: getOrderedPartnerLogo() },
+      { name: 'Glitch Games', description: '10% off everything', logo: partnerLogo(10) },
+      { name: 'Black Tiger', description: '15% off all bills', logo: partnerLogo(11) },
+      { name: 'Strikers', description: '15% off all charges', logo: partnerLogo(12) },
+      { name: 'Trigger', description: '15% off above 300', logo: partnerLogo(13) },
     ]
   },
   {
     title: 'Gyms',
     partners: [
-      { name: 'Superhuman', description: '40% off 6 & 12-month packages', logo: getOrderedPartnerLogo() },
-      { name: 'Extreme Fitness', description: '20% off (3, 9, 12-month memberships)', logo: getOrderedPartnerLogo() },
-      { name: 'Adiyoga Wellness Studio', description: '15% off (3-6 months), 20% off (1 year)', logo: getOrderedPartnerLogo() },
+      { name: 'Superhuman', description: '40% off 6 & 12-month packages', logo: partnerLogo(14) },
+      { name: 'Extreme Fitness', description: '20% off (3, 9, 12-month memberships)', logo: partnerLogo(15) },
+      { name: 'Adiyoga Wellness Studio', description: '15% off (3-6 months), 20% off (1 year)' },
     ]
   },
   {
     title: 'Saloons',
     partners: [
-      { name: 'Naturals', description: '25% off up to 1000, 30% above 1000', logo: getOrderedPartnerLogo() },
-      { name: 'Scissors and Sound', description: '40% (female hair), 30% (facials), 10% (men above 1000)', logo: getOrderedPartnerLogo() },
-      { name: 'Lucents', description: '10% off above 999', logo: getOrderedPartnerLogo() },
+      { name: 'Naturals', description: '25% off up to 1000, 30% above 1000', logo: partnerLogo(17) },
+      { name: 'Scissors and Sound', description: '40% (female hair), 30% (facials), 10% (men above 1000)', logo: partnerLogo(18) },
+      { name: 'Lucents', description: '10% off above 999', logo: partnerLogo(19) },
     ]
   },
   {
     title: 'Desserts',
     partners: [
-      { name: 'Flurrys', description: '10% on cakes, 5% on pastries', logo: getOrderedPartnerLogo() },
-      { name: 'Smoocho', description: '10% above 500', logo: getOrderedPartnerLogo() },
-      { name: 'Uncle Bros', description: '10% off above 200', logo: getOrderedPartnerLogo() },
-      { name: 'Just Juice', description: '10% off all purchases', logo: getOrderedPartnerLogo() },
+      { name: 'Flurrys', description: '10% on cakes, 5% on pastries', logo: partnerLogo(20) },
+      { name: 'Smoocho', description: '10% above 500', logo: partnerLogo(21) },
+      { name: 'Uncle Bros', description: '10% off above 200', logo: partnerLogo(22) },
+      { name: 'Just Juice', description: '10% off all purchases', logo: partnerLogo(23) },
     ]
   },
   {
     title: 'Others',
     partners: [
-      { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: getOrderedPartnerLogo() },
-      { name: 'Qstar Store', description: '10% above 1200, 15% above 2200', logo: getPartnerLogo('Qstar Store') },
-      { name: 'Maniac', description: '15% off all purchases', logo: getPartnerLogo('Maniac') },
-      { name: 'Concept', description: '20% off all purchases', logo: getPartnerLogo('Concept') },
-      { name: 'Shivanna', description: '10% (non-discounted & non-combo items)', logo: getPartnerLogo('Shivanna') },
+      { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: partnerLogo(24) },
+      { name: 'Qstar Store', description: '10% above 1200, 15% above 2200' },
+      { name: 'Maniac', description: '15% off all purchases', logo: partnerLogo(26) },
+      { name: 'Concept', description: '20% off all purchases' },
+      { name: 'Shivanna', description: '10% (non-discounted & non-combo items)' },
     ]
   }
 ];
@@ -111,11 +79,13 @@ const PartnerCard = ({ partner, index }: { partner: typeof partnerCategories[0][
     <div className="absolute inset-0 bg-red-600/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
     
     <div className="flex flex-col items-center mb-6 relative z-10">
-      <img
-        src={partner.logo}
-        alt={`${partner.name} logo`}
-        className="w-20 h-20 rounded-xl object-cover mb-3 border-2 border-red-600/40 group-hover:border-red-600 transition-colors duration-300 group-hover:shadow-red-600/50 group-hover:shadow-lg"
-      />
+      {partner.logo ? (
+        <img
+          src={partner.logo}
+          alt={`${partner.name} logo`}
+          className="w-20 h-20 rounded-xl object-cover mb-3 border-2 border-red-600/40 group-hover:border-red-600 transition-colors duration-300 group-hover:shadow-red-600/50 group-hover:shadow-lg"
+        />
+      ) : null}
       <div>
         <h3 className="text-xl font-bold text-white group-hover:text-red-400 transition-colors duration-300">{partner.name}</h3>
       </div>
