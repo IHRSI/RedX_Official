@@ -12,7 +12,7 @@ const partnerCategories = [
   {
     title: 'Food & Dining',
     partners: [
-      { name: 'ZZA Bar', description: '15% off above 399, 20% off above 799', logo: getPartnerLogo('ZZA Bar') },
+      { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: getPartnerLogo('ZZA Bar') },
       { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: getPartnerLogo('Cafe Story') },
       { name: 'Hungary House', description: '10% off above 500', logo: getPartnerLogo('Hungary House') },
       { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: getPartnerLogo('Tawa Punjab') },
@@ -20,7 +20,6 @@ const partnerCategories = [
       { name: 'Burger Shack', description: '5% (499-999), 10% (999-1499), 15% (1499+)', logo: getPartnerLogo('Burger Shack') },
       { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000', logo: getPartnerLogo('DTR') },
       { name: 'Manna Rolls', description: '10% off all purchases', logo: getPartnerLogo('Manna Rolls') },
-      { name: 'Just Juice', description: '10% off all purchases', logo: getPartnerLogo('Just Juice') },
       { name: '7 Bees', description: '15% off all purchases', logo: getPartnerLogo('7 Bees') },
     ]
   },
@@ -55,6 +54,7 @@ const partnerCategories = [
       { name: 'Flurrys', description: '10% on cakes, 5% on pastries', logo: getPartnerLogo('Flurrys') },
       { name: 'Smoocho', description: '10% above 500', logo: getPartnerLogo('Smoocho') },
       { name: 'Uncle Bros', description: '10% off above 200', logo: getPartnerLogo('Uncle Bros') },
+      { name: 'Just Juice', description: '10% off all purchases', logo: getPartnerLogo('Just Juice') },
     ]
   },
   {
@@ -63,7 +63,6 @@ const partnerCategories = [
       { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: getPartnerLogo('M2M Laptop Repairs') },
       { name: 'Qstar Store', description: '10% above 1200, 15% above 2200', logo: getPartnerLogo('Qstar Store') },
       { name: 'Maniac', description: '15% off all purchases', logo: getPartnerLogo('Maniac') },
-      { name: 'Glitch Cafe', description: '10% off everything', logo: getPartnerLogo('Glitch Cafe') },
       { name: 'Concept', description: '20% off all purchases', logo: getPartnerLogo('Concept') },
       { name: 'Shivanna', description: '10% (non-discounted & non-combo items)', logo: getPartnerLogo('Shivanna') },
     ]

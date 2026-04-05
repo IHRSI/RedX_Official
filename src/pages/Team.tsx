@@ -254,17 +254,17 @@ const Team = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-12">
               <div className="p-5 bg-red-600/10 rounded-2xl border border-red-600/30 hover-lift transition-transform">
                 <Users className="w-8 h-8 text-red-400 mx-auto mb-3" />
-                <div className="text-2xl font-bold text-red-400">60+</div>
+                <div className="text-2xl font-bold text-red-400">40+</div>
                 <p className="text-gray-400 text-sm mt-1">Management Committee</p>
               </div>
               <div className="p-5 bg-red-600/10 rounded-2xl border border-red-600/30 hover-lift transition-transform">
                 <Zap className="w-8 h-8 text-red-400 mx-auto mb-3" />
-                <div className="text-2xl font-bold text-red-400">40+</div>
+                <div className="text-2xl font-bold text-red-400">60+</div>
                 <p className="text-gray-400 text-sm mt-1">Working Committee</p>
               </div>
               <div className="p-5 bg-red-600/10 rounded-2xl border border-red-600/30 hover-lift transition-transform">
                 <Heart className="w-8 h-8 text-red-400 mx-auto mb-3" />
-                <div className="text-2xl font-bold text-red-400">12+</div>
+                <div className="text-2xl font-bold text-red-400">5+</div>
                 <p className="text-gray-400 text-sm mt-1">Departments</p>
               </div>
               <div className="p-5 bg-red-600/10 rounded-2xl border border-red-600/30 hover-lift transition-transform">
