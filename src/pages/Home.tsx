@@ -510,15 +510,6 @@ const Home = () => {
                     <span>shyam.karanth@manipal.edu</span>
                   </a>
                 </div>
-                <div className="group">
-                  <a 
-                    href="tel:+919876543210" 
-                    className="flex items-center justify-center space-x-3 text-gray-300 hover:text-red-400 transition-all duration-300 hover:scale-105 p-3 rounded-lg hover:bg-red-600/10"
-                  >
-                    <span className="text-red-500">📞</span>
-                    <span>+91 98765 43210</span>
-                  </a>
-                </div>
               </div>
             </div>
           </div>

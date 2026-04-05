@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Mail, Phone, Instagram, Linkedin, Facebook } from 'lucide-react';
+import { Mail, Instagram, Linkedin, Facebook } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -27,18 +27,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-4 text-red-400">Contact Us</h3>
             <div className="space-y-3">
               <a
-                href="mailto:redxmanipal@gmail.com"
+                href="mailto:redx.mit@manipal.edu"
                 className="flex items-center space-x-3 text-gray-400 hover:text-red-400 transition-all duration-300 hover:translate-x-1"
               >
                 <Mail size={18} className="text-red-500" />
-                <span>redxmanipal@gmail.com</span>
-              </a>
-              <a
-                href="tel:+919876543210"
-                className="flex items-center space-x-3 text-gray-400 hover:text-red-400 transition-all duration-300 hover:translate-x-1"
-              >
-                <Phone size={18} className="text-red-500" />
-                <span>+91 98765 43210</span>
+                <span>redx.mit@manipal.edu</span>
               </a>
             </div>
           </div>
@@ -77,7 +70,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-800 mt-8 pt-8 text-center animate-fade-in-up" style={{ animationDelay: '0.6s' }}>
           <p className="text-gray-400">
-            © 2024 Red-X Club, MIT Manipal. All rights reserved. | Made with ❤️ for adventure and service.
+            © 2026 Red-X Club, MIT Manipal. All rights reserved. | Made with ❤️ for adventure and service.
           </p>
         </div>
       </div>
