@@ -29,15 +29,15 @@ const Events = () => {
       images: [
         {
           src: '/uploads/treks/1.jpeg',
-          alt: 'Mountain trek with Red-X team',
+          alt: 'Treks event image',
         },
         {
           src: '/uploads/treks/2.jpeg',
-          alt: 'Adventure group photo',
+          alt: 'Treks event image',
         },
         {
           src: '/uploads/treks/3.jpeg',
-          alt: 'Trekking equipment and preparation',
+          alt: 'Treks event image',
         },
       ],
     },
@@ -56,15 +56,15 @@ const Events = () => {
       images: [
         {
           src: '/uploads/disha/1.jpeg',
-          alt: 'DISHA community service activity',
+          alt: 'DISHA event image',
         },
         {
           src: '/uploads/disha/2.jpeg',
-          alt: 'Educational outreach program',
+          alt: 'DISHA event image',
         },
         {
           src: '/uploads/disha/3.jpeg',
-          alt: 'Team volunteering together',
+          alt: 'DISHA event image',
         },
       ],
     },
@@ -83,15 +83,15 @@ const Events = () => {
       images: [
         {
           src: '/uploads/membership/1.jpeg',
-          alt: 'Membership drive stall setup',
+          alt: 'Membership event image',
         },
         {
           src: '/uploads/membership/2.jpeg',
-          alt: 'Student interaction at membership drive',
+          alt: 'Membership event image',
         },
         {
           src: '/uploads/membership/3.jpeg',
-          alt: 'Registration and information desk',
+          alt: 'Membership event image',
         },
       ],
     },
@@ -110,15 +110,15 @@ const Events = () => {
       images: [
         {
           src: '/uploads/interact/1.jpeg',
-          alt: 'Online speaker session',
+          alt: 'Interact event image',
         },
         {
           src: '/uploads/interact/2.jpeg',
-          alt: 'Virtual interaction session',
+          alt: 'Interact event image',
         },
         {
           src: '/uploads/interact/3.jpeg',
-          alt: 'Audience engagement during online event',
+          alt: 'Interact event image',
         },
       ],
     },
