@@ -18,13 +18,14 @@ const partnerCategories = [
     partners: [
       { name: 'ZZA Bar', description: '15% off above 399 \n 20% off above 799', logo: partnerLogo(1) },
       { name: 'Cafe Story', description: '10% off (399-999), 20% off (1000+)', logo: partnerLogo(2) },
-      { name: 'Hungary House', description: '10% off above 500', logo: partnerLogo(3) },
+      { name: 'Hungry House', description: '10% off above 500', logo: partnerLogo(3) },
       { name: 'Tawa Punjab', description: '5% off (499-999), 10% off (1000+)', logo: partnerLogo(4) },
       { name: 'Hakuna Matata', description: '10% off (excluding combos/discounted items)', logo: partnerLogo(5) },
       { name: 'Burger Shack', description: '5% (499-999), 10% (999-1499), 15% (1499+)', logo: partnerLogo(6) },
       { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000', logo: partnerLogo(7) },
       { name: 'Manna Rolls', description: '10% off all purchases', logo: partnerLogo(8) },
       { name: '7 Bees', description: '15% off all purchases', logo: partnerLogo(9) },
+      { name: 'Shivanna', description: '10% (non-discounted & non-combo items)', logo: partnerLogo(28) },
     ]
   },
   {
@@ -62,13 +63,12 @@ const partnerCategories = [
     ]
   },
   {
-    title: 'Others',
+    title: 'Repairs and Clothing',
     partners: [
       { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: partnerLogo(24) },
-      { name: 'Qstar Store', description: '10% above 1200, 15% above 2200' },
+      { name: 'Qstar Store', description: '10% above 1200, 15% above 2200', logo: '/uploads/partners/25.jpeg' },
       { name: 'Maniac', description: '15% off all purchases', logo: partnerLogo(26) },
       { name: 'Concept', description: '20% off all purchases' },
-      { name: 'Shivanna', description: '10% (non-discounted & non-combo items)' },
     ]
   }
 ];
@@ -223,15 +223,15 @@ const Partners = () => {
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
-                <div className="text-4xl font-bold text-red-400 mb-2">500+</div>
+                <div className="text-4xl font-bold text-red-400 mb-2">200+</div>
                 <p className="text-gray-300">Active Red-X Members</p>
               </div>
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
-                <div className="text-4xl font-bold text-red-400 mb-2">50+</div>
+                <div className="text-4xl font-bold text-red-400 mb-2">10+</div>
                 <p className="text-gray-300">Events Per Year</p>
               </div>
               <div className="text-center p-6 bg-red-600/10 rounded-2xl border border-red-600/30">
-                <div className="text-4xl font-bold text-red-400 mb-2">10K+</div>
+                <div className="text-4xl font-bold text-red-400 mb-2">20K+</div>
                 <p className="text-gray-300">Social Media Reach</p>
               </div>
             </div>
