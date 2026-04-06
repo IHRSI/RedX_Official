@@ -6,22 +6,22 @@ const FloatingParticles = lazy(() => import('../components/3d/FloatingParticles'
 const AnimatedTorus = lazy(() => import('../components/3d/AnimatedTorus'));
 
 const teamPhotos = [
-  '/uploads/team/1.jpg',
-  '/uploads/team/2.jpg',
-  '/uploads/team/3.jpg',
-  '/uploads/team/4.jpg',
-  '/uploads/team/5.jpg',
-  '/uploads/team/6.jpg',
-  '/uploads/team/7.JPG',
-  '/uploads/team/8.JPG',
-  '/uploads/team/9.JPG',
-  '/uploads/team/10.jpg',
-  '/uploads/team/11.jpg',
-  '/uploads/team/12.jpg',
-  '/uploads/team/13.jpg',
-  '/uploads/team/14.jpg',
-  '/uploads/team/15.png',
-  '/uploads/team/16.png',
+  '/uploads/team/1.jpeg',
+  '/uploads/team/2.jpeg',
+  '/uploads/team/3.jpeg',
+  '/uploads/team/4.jpeg',
+  '/uploads/team/5.jpeg',
+  '/uploads/team/6.jpeg',
+  '/uploads/team/7.jpeg',
+  '/uploads/team/8.jpeg',
+  '/uploads/team/9.jpeg',
+  '/uploads/team/10.jpeg',
+  '/uploads/team/11.jpeg',
+  '/uploads/team/12.jpeg',
+  '/uploads/team/13.jpeg',
+  '/uploads/team/14.jpeg',
+  '/uploads/team/15.jpeg',
+  '/uploads/team/16.jpeg',
 ];
 
 const Team = () => {
