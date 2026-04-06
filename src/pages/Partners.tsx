@@ -25,6 +25,7 @@ const partnerCategories = [
       { name: 'DTR', description: '10% off (non-offer items, not Saturday), 15% off above 10,000 (non-offer items)', logo: partnerLogo(7) },
       { name: 'Manna Rolls', description: '10% off all purchases', logo: partnerLogo(8) },
       { name: '7 Bees', description: '15% off all purchases', logo: partnerLogo(9) },
+      { name: 'Shivanna', description: '10% (non-discounted & non-combo items)', logo: partnerLogo(28) },
     ]
   },
   {
@@ -65,10 +66,9 @@ const partnerCategories = [
     title: 'Repairs and Clothing',
     partners: [
       { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: partnerLogo(24) },
-      { name: 'Qstar Store', description: '10% above 1200, 15% above 2200' },
+      { name: 'Qstar Store', description: '10% above 1200, 15% above 2200', logo: '/uploads/partners/25.jpeg' },
       { name: 'Maniac', description: '15% off all purchases', logo: partnerLogo(26) },
       { name: 'Concept', description: '20% off all purchases' },
-      { name: 'Shivanna', description: '10% (non-discounted & non-combo items)' },
     ]
   }
 ];
