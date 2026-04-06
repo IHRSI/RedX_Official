@@ -102,7 +102,7 @@ const FloatingParticles: React.FC<FloatingParticlesProps> = ({ variant = 'home',
   const configs = {
     home: { particles: 300, color: '#ff2222', speed: 0.4, rings: 3, showX: true },
     events: { particles: 200, color: '#ff4444', speed: 0.3, rings: 2, showX: false },
-    partners: { particles: 150, color: '#ff3333', speed: 0.2, rings: 2, showX: false },
+    partners: { particles: 320, color: '#ff6666', speed: 0.35, rings: 3, showX: true },
     membership: { particles: 250, color: '#ff1111', speed: 0.5, rings: 3, showX: true },
     team: { particles: 180, color: '#ff5555', speed: 0.25, rings: 2, showX: false },
   };

@@ -121,8 +121,10 @@ const Partners = () => {
       {/* Hero Section with 3D */}
       <section className="py-24 redx-gradient relative overflow-hidden">
         <Suspense fallback={null}>
-          <FloatingParticles variant="partners" />
-          <AnimatedTorus />
+          <FloatingParticles variant="partners" className="opacity-90" />
+          <div className="absolute inset-0 opacity-55" style={{ pointerEvents: 'none' }}>
+            <AnimatedTorus />
+          </div>
         </Suspense>
 
         <div className="absolute inset-0">
@@ -187,7 +189,7 @@ const Partners = () => {
       {/* Partner with Us Section */}
       <section className="py-24 bg-gray-900 relative overflow-hidden">
         <Suspense fallback={null}>
-          <div className="absolute inset-0 opacity-15" style={{ pointerEvents: 'none' }}>
+          <div className="absolute inset-0 opacity-25" style={{ pointerEvents: 'none' }}>
             <AnimatedTorus />
           </div>
         </Suspense>
