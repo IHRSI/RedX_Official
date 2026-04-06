@@ -1,7 +1,6 @@
 
 import React, { lazy, Suspense, useMemo } from 'react';
 import { Mail } from 'lucide-react';
-import { useIsMobile } from '../hooks/use-mobile';
 
 const FloatingParticles = lazy(() => import('../components/3d/FloatingParticles'));
 const AnimatedTorus = lazy(() => import('../components/3d/AnimatedTorus'));
@@ -105,8 +104,6 @@ const PartnerCard = ({ partner, index }: { partner: typeof partnerCategories[0][
 );
 
 const Partners = () => {
-  const isMobile = useIsMobile();
-
   const heroDots = useMemo(
     () =>
       [...Array(18)].map((_, i) => ({
@@ -123,21 +120,10 @@ const Partners = () => {
     <div className="min-h-screen bg-black text-white text-center">
       {/* Hero Section with 3D */}
       <section className="py-24 redx-gradient relative overflow-hidden">
-        {!isMobile && (
-          <Suspense fallback={null}>
-            <FloatingParticles variant="partners" />
-            <div className="absolute inset-0 opacity-20" style={{ pointerEvents: 'none' }}>
-              <AnimatedTorus />
-            </div>
-          </Suspense>
-        )}
-
-        {isMobile && (
-          <div className="absolute inset-0">
-            <div className="absolute -top-24 -left-16 h-72 w-72 rounded-full bg-red-600/20 blur-3xl animate-pulse" />
-            <div className="absolute -bottom-24 -right-16 h-80 w-80 rounded-full bg-red-500/15 blur-3xl animate-pulse" style={{ animationDelay: '1.2s' }} />
-          </div>
-        )}
+        <Suspense fallback={null}>
+          <FloatingParticles variant="partners" />
+          <AnimatedTorus />
+        </Suspense>
 
         <div className="absolute inset-0">
           {heroDots.map((dot) => (
@@ -200,13 +186,11 @@ const Partners = () => {
 
       {/* Partner with Us Section */}
       <section className="py-24 bg-gray-900 relative overflow-hidden">
-        {!isMobile && (
-          <Suspense fallback={null}>
-            <div className="absolute inset-0 opacity-15" style={{ pointerEvents: 'none' }}>
-              <AnimatedTorus />
-            </div>
-          </Suspense>
-        )}
+        <Suspense fallback={null}>
+          <div className="absolute inset-0 opacity-15" style={{ pointerEvents: 'none' }}>
+            <AnimatedTorus />
+          </div>
+        </Suspense>
         <div className="absolute inset-0 bg-gradient-to-br from-red-600/10 via-transparent to-red-600/5"></div>
         
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
