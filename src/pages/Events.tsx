@@ -28,15 +28,15 @@ const Events = () => {
       ],
       images: [
         {
-          src: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=600&h=400&fit=crop',
+          src: '/uploads/treks/1.jpeg',
           alt: 'Mountain trek with Red-X team',
         },
         {
-          src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&h=400&fit=crop',
+          src: '/uploads/treks/2.jpeg',
           alt: 'Adventure group photo',
         },
         {
-          src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop',
+          src: '/uploads/treks/3.jpeg',
           alt: 'Trekking equipment and preparation',
         },
       ],
@@ -55,15 +55,15 @@ const Events = () => {
       ],
       images: [
         {
-          src: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&h=400&fit=crop',
+          src: '/uploads/disha/1.jpeg',
           alt: 'DISHA community service activity',
         },
         {
-          src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&h=400&fit=crop',
+          src: '/uploads/disha/2.jpeg',
           alt: 'Educational outreach program',
         },
         {
-          src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
+          src: '/uploads/disha/3.jpeg',
           alt: 'Team volunteering together',
         },
       ],
@@ -82,15 +82,15 @@ const Events = () => {
       ],
       images: [
         {
-          src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop',
+          src: '/uploads/membership/1.jpeg',
           alt: 'Membership drive stall setup',
         },
         {
-          src: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=600&h=400&fit=crop',
+          src: '/uploads/membership/2.jpeg',
           alt: 'Student interaction at membership drive',
         },
         {
-          src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop',
+          src: '/uploads/membership/3.jpeg',
           alt: 'Registration and information desk',
         },
       ],
@@ -109,15 +109,15 @@ const Events = () => {
       ],
       images: [
         {
-          src: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600&h=400&fit=crop',
+          src: '/uploads/interact/1.jpeg',
           alt: 'Online speaker session',
         },
         {
-          src: 'https://images.unsplash.com/photo-1552664730-d307ca884978?w=600&h=400&fit=crop',
+          src: '/uploads/interact/2.jpeg',
           alt: 'Virtual interaction session',
         },
         {
-          src: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=400&fit=crop',
+          src: '/uploads/interact/3.jpeg',
           alt: 'Audience engagement during online event',
         },
       ],
