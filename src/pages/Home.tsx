@@ -12,54 +12,44 @@ const Home = () => {
   
   const galleryImages = [
     {
-      src: 'https://images.unsplash.com/photo-1500673922987-e212871fec22?w=800&h=600&fit=crop',
-      alt: 'Red-X Adventure Trek',
-      title: 'Mountain Adventure'
+      src: '/uploads/stories/1.jpeg',
+      alt: 'Red-X story 1'
     },
     {
-      src: 'https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=800&h=600&fit=crop',
-      alt: 'DISHA Social Drive',
-      title: 'Community Service'
+      src: '/uploads/stories/2.jpeg',
+      alt: 'Red-X story 2'
     },
     {
-      src: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop',
-      alt: 'Red-X Team Meeting',
-      title: 'Team Collaboration'
+      src: '/uploads/stories/3.jpeg',
+      alt: 'Red-X story 3'
     },
     {
-      src: 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=600&fit=crop',
-      alt: 'Adventure Group Photo',
-      title: 'Epic Adventures'
+      src: '/uploads/stories/4.jpeg',
+      alt: 'Red-X story 4'
     },
     {
-      src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=800&h=600&fit=crop',
-      alt: 'Trekking Equipment',
-      title: 'Ready for Adventure'
+      src: '/uploads/stories/5.jpeg',
+      alt: 'Red-X story 5'
     },
     {
-      src: 'https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&h=600&fit=crop',
-      alt: 'DISHA Community Work',
-      title: 'Making a Difference'
+      src: '/uploads/stories/6.jpeg',
+      alt: 'Red-X story 6'
     },
     {
-      src: 'https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=800&h=600&fit=crop',
-      alt: 'Educational Outreach',
-      title: 'Teaching & Learning'
+      src: '/uploads/stories/7.jpeg',
+      alt: 'Red-X story 7'
     },
     {
-      src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&h=600&fit=crop',
-      alt: 'Team Volunteering',
-      title: 'Volunteers United'
+      src: '/uploads/stories/8.jpeg',
+      alt: 'Red-X story 8'
     },
     {
-      src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&h=600&fit=crop',
-      alt: 'Membership Drive',
-      title: 'Growing Together'
+      src: '/uploads/stories/9.jpeg',
+      alt: 'Red-X story 9'
     },
     {
-      src: 'https://images.unsplash.com/photo-1556761175-4b46a572b786?w=800&h=600&fit=crop',
-      alt: 'Interact Session',
-      title: 'Learning from Leaders'
+      src: '/uploads/stories/10.jpeg',
+      alt: 'Red-X story 10'
     },
   ];
 
@@ -318,12 +308,7 @@ const Home = () => {
                     alt={image.alt}
                     className="w-full h-full object-cover transform hover:scale-110 transition-transform duration-700"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex items-end">
-                    <div className="p-8">
-                      <h3 className="text-2xl font-bold text-white mb-2">{image.title}</h3>
-                      <div className="w-20 h-1 bg-red-600 rounded-full glow-effect"></div>
-                    </div>
-                  </div>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
                 </div>
               ))}
             </div>
