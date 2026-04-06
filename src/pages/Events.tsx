@@ -39,14 +39,6 @@ const Events = () => {
           src: 'https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop',
           alt: 'Trekking equipment and preparation',
         },
-        {
-          src: 'https://images.unsplash.com/photo-1426604966848-d7adac402bff?w=600&h=400&fit=crop',
-          alt: 'Mountain landscape adventure',
-        },
-        {
-          src: 'https://images.unsplash.com/photo-1501854140801-50d01698950b?w=600&h=400&fit=crop',
-          alt: 'Team conquering peaks',
-        },
       ],
     },
     {
@@ -73,14 +65,6 @@ const Events = () => {
         {
           src: 'https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&h=400&fit=crop',
           alt: 'Team volunteering together',
-        },
-        {
-          src: 'https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?w=600&h=400&fit=crop',
-          alt: 'Technology for social good',
-        },
-        {
-          src: 'https://images.unsplash.com/photo-1517022812141-23620dba5c23?w=600&h=400&fit=crop',
-          alt: 'Community engagement activities',
         },
       ],
     },
@@ -109,14 +93,6 @@ const Events = () => {
           src: 'https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=600&h=400&fit=crop',
           alt: 'Registration and information desk',
         },
-        {
-          src: 'https://images.unsplash.com/photo-1551038247-3d9af20df552?w=600&h=400&fit=crop',
-          alt: 'Campus engagement activities',
-        },
-        {
-          src: 'https://images.unsplash.com/photo-1518005020951-eccb494ad742?w=600&h=400&fit=crop',
-          alt: 'New member welcome session',
-        },
       ],
     },
     {
@@ -143,14 +119,6 @@ const Events = () => {
         {
           src: 'https://images.unsplash.com/photo-1573164713988-8665fc963095?w=600&h=400&fit=crop',
           alt: 'Audience engagement during online event',
-        },
-        {
-          src: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=600&h=400&fit=crop',
-          alt: 'Technology and innovation talks',
-        },
-        {
-          src: 'https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&h=400&fit=crop',
-          alt: 'Creative digital presentations',
         },
       ],
     },
