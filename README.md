@@ -1,52 +1,79 @@
-# Red-X Digital Wings Website
+# Red-X Official Website
 
-Official website codebase for the Red-X club at MIT Manipal.
+Digital home for **Red-X, MIT Manipal**.  
+Built to showcase events, members, stories, partnerships, and the visual identity of the club with a fast, modern React stack.
+
+## Highlights
+
+- Multi-page React experience with smooth navigation
+- Rich media sections for events, team, and partner ecosystem
+- 3D-enhanced visual layers for hero and highlight sections
+- Production-ready deployment configuration for Vercel
 
 ## Tech Stack
 
+- React + TypeScript
 - Vite
-- TypeScript
-- React
-- shadcn-ui
 - Tailwind CSS
+- shadcn/ui component system
+- ESLint for code quality
 
-## Getting Started
+## Quick Start
 
-1. Install Node.js (LTS recommended).
-2. Install dependencies:
+### 1. Install dependencies
 
-```sh
+```bash
 npm install
 ```
 
-3. Start the local development server:
+### 2. Start development server
 
-```sh
+```bash
 npm run dev
 ```
 
-4. Build for production:
+### 3. Build production bundle
 
-```sh
+```bash
 npm run build
 ```
 
-5. Preview the production build locally:
+### 4. Preview production build locally
 
-```sh
+```bash
 npm run preview
 ```
 
-## Linting
+## Available Scripts
 
-Run ESLint checks:
+- `npm run dev` - Run Vite dev server
+- `npm run build` - Create production build
+- `npm run preview` - Preview built app
+- `npm run lint` - Run ESLint checks
 
-```sh
-npm run lint
-```
+## Project Layout
 
-## Project Structure
+- `src/` - Application source code
+- `src/pages/` - Route-level pages (Home, Events, Team, Partners, etc.)
+- `src/components/` - Shared UI + 3D visual components
+- `public/uploads/` - Static media assets grouped by section
+- `vercel.json` - Deployment and route fallback behavior
 
-- `src/` - React application source code
-- `public/` - Static assets
-- `index.html` - App entry HTML template
+## Deployment
+
+This project is configured for **Vercel**.
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- SPA routes should resolve through `index.html` fallback (configured in `vercel.json`)
+
+## Contributing
+
+1. Create a feature branch.
+2. Make focused changes with clear commit messages.
+3. Run `npm run lint` before pushing.
+4. Open a pull request with context and screenshots for UI updates.
+
+---
+
+Crafted for the Red-X community at MIT Manipal.

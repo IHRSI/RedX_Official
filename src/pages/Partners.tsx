@@ -67,7 +67,7 @@ const partnerCategories = [
       { name: 'M2M Laptop Repairs', description: '20% on service, 15% on parts', logo: partnerLogo(24) },
       { name: 'Qstar Store', description: '10% above 1200, 15% above 2200', logo: '/uploads/partners/25.jpeg' },
       { name: 'Maniac', description: '15% off all purchases', logo: partnerLogo(26) },
-      { name: 'Concept', description: '20% off all purchases' },
+      { name: 'Concept', description: '20% off all purchases', logo: '/uploads/partners/27.jpeg' },
     ]
   }
 ];
