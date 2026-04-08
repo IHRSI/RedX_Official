@@ -232,10 +232,8 @@ const Home = () => {
               </div>
             </Link>
 
-            <a
-              href="https://forms.google.com/membership"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              to="/membership"
               className="group redx-gradient p-8 rounded-2xl hover-lift text-white glow-effect animate-pulse-red transform hover:scale-105 transition-all duration-500 animate-fade-in-up relative overflow-hidden"
               style={{ animationDelay: '0.2s' }}
             >
@@ -247,7 +245,7 @@ const Home = () => {
                 <h3 className="text-xl font-semibold mb-3">Membership ₹349</h3>
                 <p className="text-red-100 text-sm leading-relaxed">Join the Red-X family and unlock exclusive privileges</p>
               </div>
-            </a>
+            </Link>
 
             <Link
               to="/team"
