@@ -39,7 +39,7 @@ const partnerCategories = [
   {
     title: 'Gyms',
     partners: [
-      { name: 'Superhuman', description: '40% off 6 & 12-month packages', logo: partnerLogo(14) },
+      // { name: 'Superhuman', description: '40% off 6 & 12-month packages', logo: partnerLogo(14) },
       { name: 'Extreme Fitness', description: '20% off (3, 9, 12-month memberships)', logo: partnerLogo(15) },
       { name: 'Adiyoga Wellness Studio', description: '15% off (3-6 months), 20% off (1 year)' },
     ]
